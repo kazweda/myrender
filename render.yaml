@@ -1,7 +1,7 @@
 databases:
   - name: postgresdb
     plan: free
-    databaseName: myrender
+    databaseName: postgresdb
     user: postgres
 
 services:
