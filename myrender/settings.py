@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # DEBUG = os.environ.get('DEBUG') == 'True'
 DEBUG = 'RENDER' not in os.environ
 SECRET_KEY = os.environ.get('SECRET_KEY')
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = list(os.environ.get('ALLOWED_HOSTS'))
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
