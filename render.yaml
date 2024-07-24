@@ -1,8 +1,8 @@
 databases:
   - name: postgresdb
     plan: free
-    databaseName: postgresdb
-    user: postgres
+    databaseName: DB_NAME
+    user: DB_USER
 
 services:
   - type: web
